@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test de Responsivité</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: lightgray;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 900px) {
+            body {
+                background-color: lightgreen;
+            }
+        }
+
+        @media (min-width: 901px) {
+            body {
+                background-color: lightcoral;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Test de Responsivité</h1>
+        <p>Redimensionnez la fenêtre du navigateur pour changer la couleur de fond.</p>
+    </div>
+</body>
+</html>
